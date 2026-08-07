@@ -1,1 +1,174 @@
-const homeBanners=[{'img':'images/banner1.mp4','link':'https://example.com/1'},{'img':'images/banner3.mp4','link':'https://example.com/2'}],categoryBanner={'img':'images/banner4.mp4','link':'https://example.com'},articleBanner={'img':'images/banner3.mp4','link':'https://example.com'},promoBanners=[{'img':'images/banner1.mp4','link':'https://example.com/1'},{'img':'images/banner2.mp4','link':'https://example.com/2'},{'img':'banner3.mp4','link':'https://example.com/3'},{'img':'banner4.mp4','link':'https://example.com/4'},{'img':'banner5.mp4','link':'https://example.com/5'}],fallbackBanner={'img':'images/banner2.mp4','link':'https://t.me/your_channel_id'},welcomeMessage='به\x20اپلیکیشن\x20ادان\x20ماینکرفت\x20خوش\x20آمدید.!',suggestedTags={'ADD-ON':['#ماشین','#شمشیر','#موب_جدید','#تفنگ'],'Shader':['#واقع_گرایانه','#بدون_لگ','#سبک','#آب_طبیعی'],'Skin':['#پسرانه','#دخترانه','#هکر','#ترسناک'],'Map':['#پارکور','#سروایول','#شهر','#ترسناک'],'Texture':['#کلاسیک','#پی_وی_پی','#رئالیسم'],'MiniGame':['#بدوارز','#اسکای_وارز','#مبارزه'],'Version':['#رسمی','#بتا'],'Article':['#آموزش_نصب','#فارم','#ترفند']},categoryGuides={'ADD-ON':{'title':'آموزش\x20نصب\x20مود','pic':'guide-pic.jpg','text':'متن\x20آموزش\x20نصب\x20مودها...'},'Shader':{'title':'آموزش\x20نصب\x20شیدر','pic':'guide-pic.jpg','text':'متن\x20آموزش\x20نصب\x20شیدرها...'}};let db=[{'id':0x1,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x4e2,'likes':0x154,'tags':['#تفنگ','#موب_جدید']},{'id':0x2,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x3,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x4,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x5,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x6,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x7,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x8,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0x9,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0xf00,'tags':['#تفنگ','#موب_جدید']},{'id':0xa,'type':'ADD-ON','title':'مود\x20تفنگ‌های\x20پیشرفته','desc':'توضیحات\x20کامل\x20این\x20مود\x20فوق‌العاده...','img':'cat-addon.jpg','downloads':0x3124,'likes':0x965a,'tags':['#تفنگ','#موب_جدید']},{'id':0xb,'title':'چگونه\x20در\x20ماینکرفت\x20یک\x20فارم\x20آهن\x20بسازیم؟','type':'Article','img':'images/farm.jpg','desc':'یک\x20راهنمای\x20کامل\x20برای\x20ساخت\x20سریع\x20و\x20بهینه\x20فارم\x20آهن\x20در\x20نسخه\x20جدید\x20بدراک...\x0a\x0aمرحله\x20اول:\x20جمع\x20آوری\x20منابع\x0aمرحله\x20دوم:\x20ساخت\x20پلتفرم\x20در\x20ارتفاع\x20بالا\x0aمرحله\x20سوم:\x20آوردن\x20ویلیجرها...','author':'TLP','likes':0x37a,'tags':['#آموزش','#فارم','#آهن','#بدراک']}];const forceUpdateConfig={'enabled':![],'title':'بروزرسانی\x20جدید\x20در\x20دسترس\x20است!','text':'نسخه\x20جدید\x20اپلیکیشن\x20با\x20امکانات\x20فوق‌العاده\x20منتشر\x20شد!\x20لطفا\x20برای\x20ادامه\x20استفاده،\x20برنامه\x20را\x20بروزرسانی\x20کنید.','btnText':'بروزرسانی','link':'https://example.com/update'},supportLink='http//add';globalThis['homeBanners']=homeBanners;globalThis['categoryBanner']=categoryBanner;globalThis['articleBanner']=articleBanner;globalThis['promoBanners']=promoBanners;globalThis['fallbackBanner']=fallbackBanner;globalThis['welcomeMessage']=welcomeMessage;globalThis['suggestedTags']=suggestedTags;globalThis['categoryGuides']=categoryGuides;globalThis['db']=db;globalThis['forceUpdateConfig']=forceUpdateConfig;globalThis['supportLink']=supportLink;
+// ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
+const homeBanners = [
+    { img: "images/banner1.mp4", link: "https://example.com/1" },
+    { img: "images/banner3.mp4", link: "https://example.com/2" }
+];
+
+// ۲. بنر پایین صفحه دسته‌بندی‌ها
+const categoryBanner = { img: "images/banner4.mp4", link: "https://example.com" };
+
+// ۳. بنر پایین صفحه مقالات
+const articleBanner = { img: "images/banner3.mp4", link: "https://example.com" };
+
+// ۴. آرایه ۵ تایی بنرهای تبلیغاتی بین فایل‌ها
+const promoBanners = [
+    { img: "images/banner1.mp4", link: "https://example.com/1" },
+    { img: "images/banner2.mp4", link: "https://example.com/2" },
+    { img: "banner3.mp4", link: "https://example.com/3" },
+    { img: "banner4.mp4", link: "https://example.com/4" },
+    { img: "banner5.mp4", link: "https://example.com/5" }
+];
+
+// ۵. ویدیوی احتیاطی در صورت خرابی بنرها
+const fallbackBanner = {
+    img: "images/banner2.mp4",
+    link: "https://t.me/your_channel_id"
+};
+
+// ۶. پیام خوش‌آمدگویی (کنار صفحه)
+const welcomeMessage = "به اپلیکیشن ادان ماینکرفت خوش آمدید.!g";
+
+// ۷. هشتگ‌های پیشنهادی هر دسته
+const suggestedTags = {
+    'ADD-ON': ['#ماشین', '#شمشیر', '#موب_جدید', '#تفنگ'],
+    'Shader': ['#واقع_گرایانه', '#بدون_لگ', '#سبک', '#آب_طبیعی'],
+    'Skin': ['#پسرانه', '#دخترانه', '#هکر', '#ترسناک'],
+    'Map': ['#پارکور', '#سروایول', '#شهر', '#ترسناک'],
+    'Texture': ['#کلاسیک', '#پی_وی_پی', '#رئالیسم'],
+    'MiniGame': ['#بدوارز', '#اسکای_وارز', '#مبارزه'],
+    'Version': ['#رسمی', '#بتا'],
+    'Article': ['#آموزش_نصب', '#فارم', '#ترفند']
+};
+
+// ۸. راهنمای نصب دسته‌ها
+const categoryGuides = {
+    'ADD-ON': { title: "آموزش نصب مود", pic: "guide-pic.jpg", text: "متن آموزش نصب مودها..." },
+    'Shader': { title: "آموزش نصب شیدر", pic: "guide-pic.jpg", text: "متن آموزش نصب شیدرها..." }
+    // بقیه دسته‌ها...
+};
+
+// ۹. دیتابیس فایل‌ها و مقالات شما (db)
+let db = [
+    {
+        id: 1,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 1250,
+        likes: 340,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 2,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 3,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 4,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 5,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 6,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 7,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 8,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 9,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 3840,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 10,
+        type: 'ADD-ON',
+        title: 'مود تفنگ‌های پیشرفته',
+        desc: 'توضیحات کامل این مود فوق‌العاده...',
+        img: 'cat-addon.jpg',
+        downloads: 12580,
+        likes: 38490,
+        tags: ['#تفنگ', '#موب_جدید']
+    },
+    {
+        id: 11,
+        title: "چگونه در ماینکرفت یک فارم آهن بسازیم؟",
+        type: "Article",
+        img: "images/farm.jpg",
+        desc: "یک راهنمای کامل برای ساخت سریع و بهینه فارم آهن در نسخه جدید بدراک...\n\nمرحله اول: جمع آوری منابع\nمرحله دوم: ساخت پلتفرم در ارتفاع بالا\nمرحله سوم: آوردن ویلیجرها...",
+        author: "TLP",
+        likes: 890,
+        tags: ["#آموزش", "#فارم", "#آهن", "#بدراک"]
+    }
+];
+
+// ۱۰. تنظیمات بروزرسانی اجباری اپلیکیشن
+const forceUpdateConfig = {
+    enabled: false, // اگر true باشد، پیام آپدیت اجباری نمایش داده می‌شود و اپلیکیشن قفل می‌شود
+    title: "بروزرسانی جدید در دسترس است!",
+    text: "نسخه جدید اپلیکیشن با امکانات فوق‌العاده منتشر شد! لطفا برای ادامه استفاده، برنامه را بروزرسانی کنید.",
+    btnText: "بروزرسانی",
+    link: "https://example.com/update"
+};
+
+// ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
+const supportLink = "http//add";
