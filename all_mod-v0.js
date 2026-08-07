@@ -1,3 +1,5 @@
+window.ALL_MOD_VERSION = "1"; // عدد ورژن فایل
+
 // ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
 const homeBanners = [
     { img: "images/banner1.mp4", link: "https://example.com/1" },
