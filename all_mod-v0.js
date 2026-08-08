@@ -1,4 +1,16 @@
 window.ALL_MOD_VERSION = "1"; // عدد ورژن فایل
+// پیدا کردن بخش خانه در اپلیکیشن
+var homeContainer = document.getElementById("page-home");
+
+// اگر بخش خانه پیدا شد، کدهای HTML زیر را به ابتدای آن تزریق کن
+if (homeContainer) {
+    homeContainer.insertAdjacentHTML('afterbegin', `
+    
+        <!-- لوگوی ویدئویی -->
+        <video src="images/Logo-Beta.webm" class="home-logo" autoplay loop muted playsinline></video>
+        
+    `);
+}
 
 // ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
 const homeBanners = [
