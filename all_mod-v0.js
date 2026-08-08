@@ -177,7 +177,7 @@ let db = [
 
 // تنظیمات آپدیت که تو از طریق گیت‌هاب کنترل می‌کنی
 var updateConfig = {
-    forceUpdate: true,        // true = آپدیت اجباری فعال | false = غیرفعال
+    forceUpdate: false,        // true = آپدیت اجباری فعال | false = غیرفعال
     requiredVersion: "0.0.2", // حداقل نسخه‌ای که اپلیکیشن باید داشته باشد
     updateLink: "https://your-download-link.com" // لینک دانلود نسخه جدید
 };
