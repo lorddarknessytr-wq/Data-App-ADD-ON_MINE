@@ -7,7 +7,7 @@ if (homeContainer) {
     homeContainer.insertAdjacentHTML('afterbegin', `
     
         <!-- لوگوی ویدئویی -->
-        <video src="images/Logo-Beta.webm" class="home-logo" autoplay loop muted playsinline></video>
+        <video src="images/Logo-Da.webm" class="home-logo" autoplay loop muted playsinline></video>
         
     `);
 }
