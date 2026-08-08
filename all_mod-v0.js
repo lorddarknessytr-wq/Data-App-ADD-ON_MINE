@@ -175,13 +175,49 @@ let db = [
     }
 ];
 
-// ۱۰. تنظیمات بروزرسانی اجباری اپلیکیشن
-const forceUpdateConfig = {
-    enabled: false, // اگر true باشد، پیام آپدیت اجباری نمایش داده می‌شود و اپلیکیشن قفل می‌شود
-    title: "بروزرسانی جدید در دسترس است!",
-    text: "نسخه جدید اپلیکیشن با امکانات فوق‌العاده منتشر شد! لطفا برای ادامه استفاده، برنامه را بروزرسانی کنید.",
-    btnText: "بروزرسانی",
-    link: "https://example.com/update"
+// تنظیمات آپدیت که تو از طریق گیت‌هاب کنترل می‌کنی
+var updateConfig = {
+    forceUpdate: true,        // true = آپدیت اجباری فعال | false = غیرفعال
+    requiredVersion: "0.0.2", // حداقل نسخه‌ای که اپلیکیشن باید داشته باشد
+    updateLink: "https://your-download-link.com" // لینک دانلود نسخه جدید
+};
+
+// تابع مقایسه نسخه‌ها (از چپ به راست)
+function needsForceUpdate(current, required) {
+    var currParts = current.split('.').map(Number);
+    var reqParts = required.split('.').map(Number);
+
+    for (var i = 0; i < 3; i++) {
+        var curr = currParts[i] || 0;
+        var req = reqParts[i] || 0;
+
+        if (curr < req) {
+            return true;  // نسخه کاربر قدیمی‌تر است -> نیاز به آپدیت
+        }
+        if (curr > req) {
+            return false; // نسخه کاربر جدیدتر است -> نیاز به آپدیت نیست
+        }
+        // اگر برابر بودند، حلقه ادامه می‌یابد تا عدد بعدی چک شود
+    }
+    return false; // نسخه‌ها کاملاً یکسان هستند
+}
+
+// اجرای سیستم بررسی
+if (updateConfig.forceUpdate && window.CURRENT_APP_VERSION) {
+    var isUpdateRequired = needsForceUpdate(window.CURRENT_APP_VERSION, updateConfig.requiredVersion);
+
+    if (isUpdateRequired) {
+        // ایجاد و نمایش صفحه پاپ‌آپ آپدیت اجباری
+        document.body.insertAdjacentHTML('beforeend', `
+            <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; font-family:sans-serif; text-align:center;">
+                <h2>نسخه قدیمی است!</h2>
+                <p>برای استفاده از برنامه، باید آن را به آخرین نسخه بروزرسانی کنید.</p>
+                <a href="${updateConfig.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
+            </div>
+        `);
+    }
+}
+
 };
 
 // ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
