@@ -40,7 +40,7 @@ const fallbackBanner = {
 };
 
 // ۶. پیام خوش‌آمدگویی (کنار صفحه)
-const welcomeMessage = "به اپلیکیشن ادان ماینکرفت خوش آمدید.!";
+const welcomeMessage = "gبه اپلیکیشن ادان ماینکرفت خوش آمدید.!";
 
 // ۷. هشتگ‌های پیشنهادی هر دسته
 const suggestedTags = {
