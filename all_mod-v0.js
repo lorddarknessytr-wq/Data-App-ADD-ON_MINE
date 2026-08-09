@@ -71,7 +71,7 @@ let db = [
         img: 'cat-addon.jpg',
         downloads: 1250,
         likes: 340,
-        tags: ['#تفنگ', '#موب_جدید']
+        tags: ['#1 , #تفنگ , #ماینکرفت']
     },
     {
         id: 2,
