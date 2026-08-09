@@ -40,7 +40,7 @@ const fallbackBanner = {
 };
 
 // ۶. پیام خوش‌آمدگویی (کنار صفحه)
-const welcomeMessage = "gبه اپلیکیشن ادان ماینکرفت خوش آمدید.!";
+const welcomeMessage = "به اپلیکیشن ادان ماینکرفت خوش آمدید.!";
 
 // ۷. هشتگ‌های پیشنهادی هر دسته
 const suggestedTags = {
@@ -174,51 +174,63 @@ let db = [
         tags: ["#آموزش", "#فارم", "#آهن", "#بدراک"]
     }
 ];
+// === سیستم آپدیت اجباری (ایزوله شده) ===
+(function() {
+    try {
+        // تنظیمات آپدیت
+        var updateConfig = {
+            forceUpdate: false,        // true = فعال | false = غیرفعال
+            requiredVersion: "0.0.1", // حداقل نسخه مجاز
+            updateLink: "https://your-download-link.com" // لینک دانلود
+        };
 
-// تنظیمات آپدیت که تو از طریق گیت‌هاب کنترل می‌کنی
-var updateConfig = {
-    forceUpdate: false,        // true = آپدیت اجباری فعال | false = غیرفعال
-    requiredVersion: "0.0.2", // حداقل نسخه‌ای که اپلیکیشن باید داشته باشد
-    updateLink: "https://your-download-link.com" // لینک دانلود نسخه جدید
-};
+        // تابع مقایسه نسخه‌ها
+        function needsForceUpdate(current, required) {
+            var currParts = current.split('.').map(Number);
+            var reqParts = required.split('.').map(Number);
 
-// تابع مقایسه نسخه‌ها (از چپ به راست)
-function needsForceUpdate(current, required) {
-    var currParts = current.split('.').map(Number);
-    var reqParts = required.split('.').map(Number);
+            for (var i = 0; i < 3; i++) {
+                var curr = currParts[i] || 0;
+                var req = reqParts[i] || 0;
 
-    for (var i = 0; i < 3; i++) {
-        var curr = currParts[i] || 0;
-        var req = reqParts[i] || 0;
-
-        if (curr < req) {
-            return true;  // نسخه کاربر قدیمی‌تر است -> نیاز به آپدیت
+                if (curr < req) return true;
+                if (curr > req) return false;
+            }
+            return false;
         }
-        if (curr > req) {
-            return false; // نسخه کاربر جدیدتر است -> نیاز به آپدیت نیست
+
+        // تابع نمایش پاپ‌آپ
+        function showUpdatePopup() {
+            if (!updateConfig.forceUpdate || !window.CURRENT_APP_VERSION) return;
+            
+            if (needsForceUpdate(window.CURRENT_APP_VERSION, updateConfig.requiredVersion)) {
+                // ساخت اصولی المنت برای جلوگیری از خطای HTML
+                var popup = document.createElement('div');
+                popup.innerHTML = `
+                    <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; font-family:sans-serif; text-align:center;">
+                        <h2>نسخه شما قدیمی است!</h2>
+                        <p>برای استفاده از برنامه، باید آن را بروزرسانی کنید.</p>
+                        <a href="${updateConfig.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
+                    </div>
+                `;
+                document.body.appendChild(popup);
+            }
         }
-        // اگر برابر بودند، حلقه ادامه می‌یابد تا عدد بعدی چک شود
+
+        // اجرای هوشمندانه فقط زمانی که اپلیکیشن کامل لود شده باشد
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', showUpdatePopup);
+        } else {
+            showUpdatePopup();
+        }
+        
+    } catch(error) {
+        // اگر خطایی رخ دهد اینجا چاپ می‌شود ولی بقیه کدهای All_mod خراب نمی‌شود
+        console.log("خطا در سیستم آپدیت:", error);
     }
-    return false; // نسخه‌ها کاملاً یکسان هستند
-}
+})();
+// =======================================
 
-// اجرای سیستم بررسی
-if (updateConfig.forceUpdate && window.CURRENT_APP_VERSION) {
-    var isUpdateRequired = needsForceUpdate(window.CURRENT_APP_VERSION, updateConfig.requiredVersion);
-
-    if (isUpdateRequired) {
-        // ایجاد و نمایش صفحه پاپ‌آپ آپدیت اجباری
-        document.body.insertAdjacentHTML('beforeend', `
-            <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; font-family:sans-serif; text-align:center;">
-                <h2>نسخه قدیمی است!</h2>
-                <p>برای استفاده از برنامه، باید آن را به آخرین نسخه بروزرسانی کنید.</p>
-                <a href="${updateConfig.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
-            </div>
-        `);
-    }
-}
-
-};
 
 // ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
 const supportLink = "http//add";
