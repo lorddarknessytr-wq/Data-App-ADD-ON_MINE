@@ -66,31 +66,32 @@ let db = [
     {
         id: 1,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌های پیشرفته',
+        title: 'مود تفنگ‌Aهای پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
-        img: 'cat-addon.jpg',
+        img: 'images/addon.jpg',
         downloads: 1250,
-        likes: 340,
-        tags: ['#1 , #تفنگ , #ماینکرفت']
+        likes: 34,
+        tags: ['#1'],
+        downloadLink: 'https://imaniweb.ir/?download=962228'
     },
     {
         id: 2,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌های پیشرفته',
+        title: 'مود تفنگ‌yهای پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
         downloads: 12580,
-        likes: 3840,
+        likes: 38400,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
         id: 3,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌های پیشرفته',
+        title: 'مود تفنگ‌های 5پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
         downloads: 12580,
-        likes: 3840,
+        likes: 38400,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -167,8 +168,8 @@ let db = [
         id: 11,
         title: "چگونه در ماینکرفت یک فارم آهن بسازیم؟",
         type: "Article",
-        img: "images/farm.jpg",
-        desc: "یک راهنمای کامل برای ساخت سریع و بهینه فارم آهن در نسخه جدید بدراک...\n\nمرحله اول: جمع آوری منابع\nمرحله دوم: ساخت پلتفرم در ارتفاع بالا\nمرحله سوم: آوردن ویلیجرها...",
+        img: "images/addon.jpg",
+        desc: "",
         author: "TLP",
         likes: 890,
         tags: ["#آموزش", "#فارم", "#آهن", "#بدراک"]
