@@ -72,7 +72,7 @@ let db = [
         downloads: 1250,
         likes: 34,
         tags: ['#1'],
-        downloadLink: 'https://imaniweb.ir/?download=962228'
+        downloadLink: 'https://imaniweb.ir/?download=882557'
     },
     {
         id: 2,
