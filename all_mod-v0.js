@@ -56,7 +56,7 @@ const suggestedTags = {
 
 // ۸. راهنمای نصب دسته‌ها
 const categoryGuides = {
-    'ADD-ON': { title: `آموزش نصب ادان`,pic: "images/guide-p.png", text: 'https://abrehamrahi.ir/o/public/4RK2Vrqh/'> },
+    'ADD-ON': { title: `آموزش نصب ادان`,pic: "images/guide-p.png", text: 'https://abrehamrahi.ir/o/public/4RK2Vrqh/' },
     'Shader': { title: "آموزش نصب شیدر", pic: "images/guide-p.png", text: "متن آموزش نصب شیدرها..." },
     'Skin': { title: "آموزش نصب اسکین", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
     'Map': { title: "آموزش نصب مپ", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
