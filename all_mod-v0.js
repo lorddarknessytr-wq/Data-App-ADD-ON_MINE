@@ -56,13 +56,13 @@ const suggestedTags = {
 
 // ۸. راهنمای نصب دسته‌ها
 const categoryGuides = {
-    'ADD-ON': { title: "آموزش نصب ادان", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." },
-    'Shader': { title: "آموزش نصب شیدر", pic: "images/guide-p.jpg", text: "متن آموزش نصب شیدرها..." },
-    'Skin': { title: "آموزش نصب اسکین", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." },
-    'Map': { title: "آموزش نصب مپ", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." },
-    'Texture': { title: "آموزش نصب مپ", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." },
-    'MiniGame': { title: "آموزش نصب مینی‌گیم", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." },
-    'Version': { title: "آموزش نصب ماینکرفت", pic: "images/guide-p.jpg", text: "متن آموزش نصب مودها..." }
+    'ADD-ON': { title: "آموزش نصب ادان", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
+    'Shader': { title: "آموزش نصب شیدر", pic: "images/guide-p.png", text: "متن آموزش نصب شیدرها..." },
+    'Skin': { title: "آموزش نصب اسکین", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
+    'Map': { title: "آموزش نصب مپ", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
+    'Texture': { title: "آموزش نصب مپ", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
+    'MiniGame': { title: "آموزش نصب مینی‌گیم", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." },
+    'Version': { title: "آموزش نصب ماینکرفت", pic: "images/guide-p.png", text: "متن آموزش نصب مودها..." }
 };
 
 // ۹. دیتابیس فایل‌ها و مقالات شما (db)
