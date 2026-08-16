@@ -86,7 +86,8 @@ let db = [
         img: 'cat-addon.jpg',
         downloads: 12580,
         likes: 38400,
-        tags: ['#تفنگ', '#موب_جدید']
+        tags: ['#تفنگ', '#موب_جدید'],
+        downloadLink: 'https://abrehamrahi.ir/o/public/mAzpDKAF/'
     },
     {
         id: 3,
