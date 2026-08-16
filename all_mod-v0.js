@@ -169,7 +169,7 @@ let db = [
         title: "چگونه در ماینکرفت یک فارم آهن بسازیم؟",
         type: "Article",
         img: "images/addon.jpg",
-        desc: "",
+        desc: `متن`,
         author: "TLP",
         likes: 890,
         tags: ["#آموزش", "#فارم", "#آهن", "#بدراک"]
