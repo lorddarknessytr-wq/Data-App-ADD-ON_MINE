@@ -299,16 +299,25 @@ let db = [
     {
         id: 6,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌های پیشرفته',
-        desc: 'توضیحات کامل این مود فوق‌العاده...',
-        img: 'cat-addon.jpg',
+        title: 'مود Nether Expansion',
+        desc: `افزونه‌ی Nether Expansion بالاخره منتشر شد و تجربه‌ی اصلی شما را با محتوای جدیدی غنی‌تر می‌کند!
+
+🔥 5 زیست‌بوم جدید در Nether
+🔥 غارهای تصادفی
+🔥 سازه‌های جدید
+🔥 زره و ابزار
+🔥 یک باس جدید، موجودات و همراهان
+نسخه مورد نیاز : +1.26.30
+حجم ≈ 2.2 مگابایت`,
+        img: 'https://abrehamrahi.ir/o/public/xhXNUqWL/',
         downloads: 0,
         likes: 0,
-        tags: ['#تفنگ', '#موب_جدید']
+        tags: ['#'],
+        downloadLink: 'https://abrehamrahi.ir/o/public/BQ55aUy5/'
     },
     {
         id: 7,
-        type: 'ADD-ON',
+        type: 'Resource-Pack',
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
@@ -318,7 +327,7 @@ let db = [
     },
     {
         id: 8,
-        type: 'ADD-ON',
+        type: 'Map',
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
@@ -328,7 +337,7 @@ let db = [
     },
     {
         id: 9,
-        type: 'ADD-ON',
+        type: 'MiniGame',
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
@@ -338,7 +347,7 @@ let db = [
     },
     {
         id: 10,
-        type: 'ADD-ON',
+        type: 'Shader',
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
