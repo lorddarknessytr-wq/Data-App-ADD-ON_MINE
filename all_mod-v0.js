@@ -240,7 +240,7 @@ let db = [
         downloads: 0,
         likes: 0,
         tags: ['#'],
-        downloadLink: 'https://abrehamrahi.ir/o/public/8l2ab6G8/'
+        downloadLink: 'https://abrehamrahi.ir/o/public/8l2ab6G8'
     },
     {
         id: 2,
