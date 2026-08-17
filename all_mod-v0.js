@@ -238,7 +238,7 @@ let db = [
         desc: `افزونه RPG، بیش از 50 عنصر RPG را به هر دنیایی اضافه می‌کند: کلاس‌ها را انتخاب کنید، سطح خود را ارتقا دهید، انجمن‌ها بسازید و موارد دیگر! مهارت‌های جدید، نبردهای چالش‌برانگیز با باس‌ها، زیست‌بوم‌های کمیاب و صندوق‌های گنج، موجودات منحصربه‌فرد، قبایل، همراهان، و همچنین مجموعه‌ای از سلاح‌ها و زره‌ها.
         نسخه مورد نیاز : +1.21
         حجم ≈ 17 مگابایت`,
-        img: 'https://abrehamrahi.ir/o/public/uWdJUXpQ/',
+        img: 'https://abrehamrahi.ir/o/public/uWdJUXpQ',
         downloads: 0,
         likes: 0,
         tags: ['#'],
@@ -251,11 +251,11 @@ let db = [
         desc: `با انجام فعالیت‌هایی مانند کشاورزی، ماهیگیری، مبارزه و جمع‌آوری منابع، امتیاز کسب کنید تا بیش از 45 مزیت منحصربه‌فرد را باز کنید که شما را قوی‌تر و کارآمدتر می‌کنند. مهارت‌های قدرتمندی را کشف کنید و از ارتقاءهای بی‌نقطه‌ووصلی لذت ببرید که کیفیت زندگی شما را در حالت بقا بهبود می‌بخشند.
             نسخه مورد نیاز : +1.26.0
             حجم ≈ 1 مگابایت`,
-        img: 'https://abrehamrahi.ir/o/public/fRyOHjkl/',
+        img: 'https://abrehamrahi.ir/o/public/fRyOHjkl',
         downloads: 0,
         likes: 0,
         tags: ['#'],
-        downloadLink: 'https://abrehamrahi.ir/o/public/UpPZOnKw/'
+        downloadLink: 'https://abrehamrahi.ir/o/public/UpPZOnKw'
     },
     {
         id: 3,
@@ -264,11 +264,11 @@ let db = [
         desc: `سرگرم‌کننده و هیجان‌انگیز شوید با تی‌ان‌تی غول‌پیکر! انواع جدیدی از تی‌ان‌تی را با اندازه‌ها، قابلیت‌ها و انفجارهای قدرتمند کشف کنید. از انفجارهای معجون‌ها گرفته تا انفجارهایی که دنیا را به لرزه در می‌آورند، آزمایش کنید، استراتژی‌های خود را توسعه دهید و هرج و مرج را به گونه‌ای که تا به حال ندیده‌اید، به پا کنید.
             نسخه مورد نیاز : +1.26.40
     حجم ≈ 1 مگابایت`,
-        img: 'https://abrehamrahi.ir/o/public/LTcYCylE/',
+        img: 'https://abrehamrahi.ir/o/public/LTcYCylE',
         downloads: 0,
         likes: 0,
         tags: ['#'],
-        downloadLink: 'https://abrehamrahi.ir/o/public/gawgaLsB/'
+        downloadLink: 'https://abrehamrahi.ir/o/public/gawgaLsB'
     },
     {
         id: 4,
