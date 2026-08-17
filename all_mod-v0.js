@@ -235,12 +235,12 @@ let db = [
         id: 1,
         type: 'ADD-ON',
         title: 'مود RGB',
-        desc: '.',
+        desc: `افزونه RPG، بیش از 50 عنصر RPG را به هر دنیایی اضافه می‌کند: کلاس‌ها را انتخاب کنید، سطح خود را ارتقا دهید، انجمن‌ها بسازید و موارد دیگر! مهارت‌های جدید، نبردهای چالش‌برانگیز با باس‌ها، زیست‌بوم‌های کمیاب و صندوق‌های گنج، موجودات منحصربه‌فرد، قبایل، همراهان، و همچنین مجموعه‌ای از سلاح‌ها و زره‌ها. `,
         img: 'https://abrehamrahi.ir/o/public/uWdJUXpQ/',
         downloads: 0,
         likes: 0,
         tags: ['#'],
-        downloadLink: 'https://abrehamrahi.ir/o/public/YX728ok9/'
+        downloadLink: 'https://abrehamrahi.ir/o/public/DPQoKggF/'
     },
     {
         id: 2,
