@@ -273,12 +273,15 @@ let db = [
     {
         id: 4,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌های پیشرفته',
-        desc: 'توضیحات کامل این مود فوق‌العاده...',
-        img: 'cat-addon.jpg',
+        title: 'مود BiomeCraft (Lite)',
+        desc: `Biomecraft Lite یک افزونه برای Minecraft Bedrock است که شامل حیوانات جدید و زیست‌بوم‌های منحصربه‌فرد است. این افزونه تنوع طبیعت را به بازی اضافه می‌کند، به شما امکان می‌دهد مناظر جدید را کشف کنید و با حیوانات جالبی روبرو شوید تا ماجراجویی‌های هیجان‌انگیزی داشته باشید و برای بقا تلاش کنید.
+        نسخه مورد نیاز : +1.21
+        حجم ≈ 5.5 مگابایت`,
+        img: 'https://abrehamrahi.ir/o/public/kvrmACtg',
         downloads: 0,
         likes: 0,
-        tags: ['#تفنگ', '#موب_جدید']
+        tags: ['#'],
+        downloadLink: 'https://abrehamrahi.ir/o/public/VJZVDKZv'
     },
     {
         id: 5,
