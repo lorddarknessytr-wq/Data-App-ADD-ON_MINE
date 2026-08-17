@@ -234,13 +234,13 @@ let db = [
     {
         id: 1,
         type: 'ADD-ON',
-        title: 'مود تفنگ‌Aهای پیشرفته',
-        desc: 'توضیحات کامل این مود فوق‌العاده...',
-        img: 'images/addon.jpg',
-        downloads: 1250,
-        likes: 34,
-        tags: ['#1'],
-        downloadLink: 'https://github.com/lorddarknessytr-wq/Data-App-ADD-ON_MINE/raw/refs/heads/main/Gg.mcaddon'
+        title: '',
+        desc: 'توضیحات',
+        img: '',
+        downloads: 0,
+        likes 0,
+        tags: ['#'],
+        downloadLink: ''
     },
     {
         id: 2,
@@ -248,8 +248,8 @@ let db = [
         title: 'مود تفنگ‌yهای پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 38400,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید'],
         downloadLink: 'https://abrehamrahi.ir/o/public/mAzpDKAF/'
     },
@@ -259,8 +259,8 @@ let db = [
         title: 'مود تفنگ‌های 5پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 38400,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -269,8 +269,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -279,8 +279,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -289,8 +289,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -299,8 +299,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -309,8 +309,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -319,8 +319,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 3840,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -329,8 +329,8 @@ let db = [
         title: 'مود تفنگ‌های پیشرفته',
         desc: 'توضیحات کامل این مود فوق‌العاده...',
         img: 'cat-addon.jpg',
-        downloads: 12580,
-        likes: 38490,
+        downloads: 0,
+        likes: 0,
         tags: ['#تفنگ', '#موب_جدید']
     },
     {
@@ -340,7 +340,7 @@ let db = [
         img: "images/addon.jpg",
         desc: ` خط جدید`,
         author: "TLP",
-        likes: 890,
+        likes: 0,
         tags: ["#آموزش", "#فارم", "#آهن", "#بدراک"]
     }
 ];
