@@ -238,7 +238,7 @@ let db = [
         desc: '.',
         img: 'https://abrehamrahi.ir/o/public/uWdJUXpQ/',
         downloads: 0,
-        likes 0,
+        like 1,
         tags: ['#'],
         downloadLink: 'https://abrehamrahi.ir/o/public/YX728ok9/'
     },
