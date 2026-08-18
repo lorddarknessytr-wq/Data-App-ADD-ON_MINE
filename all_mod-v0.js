@@ -14,20 +14,20 @@ if (homeContainer) {
 
 // ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
 const homeBanners = [
-    { img: "images/banner1.mp4", link: "https://example.com/1" },
-    { img: "images/banner3.mp4", link: "https://example.com/2" }
+    { img: "images/banner1.mp4", link: "rubika.ir/Addonmine" },
+    { img: "images/banner3.mp4", link: "" }
 ];
 
 // ۲. بنر پایین صفحه دسته‌بندی‌ها
-const categoryBanner = { img: "images/banner4.mp4", link: "https://example.com" };
+const categoryBanner = { img: "images/banner2.mp4", link: "" };
 
 // ۳. بنر پایین صفحه مقالات
 const articleBanner = { img: "images/banner3.mp4", link: "https://example.com" };
 
 // ۴. آرایه ۵ تایی بنرهای تبلیغاتی بین فایل‌ها
 const promoBanners = [
-    { img: "images/banner1.mp4", link: "https://example.com/1" },
-    { img: "images/banner2.mp4", link: "https://example.com/2" },
+    { img: "images/banner1.mp4", link: "rubika.ir/Addonmine" },
+    { img: "images/banner2.mp4", link: "" },
     { img: "banner3.mp4", link: "https://example.com/3" },
     { img: "banner4.mp4", link: "https://example.com/4" },
     { img: "banner5.mp4", link: "https://example.com/5" }
