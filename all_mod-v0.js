@@ -14,7 +14,7 @@ if (homeContainer) {
 
 // ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
 const homeBanners = [
-    { img: "images/banner1.mp4", link: "rubika.ir/Addonmine" },
+    { img: "images/banner1.mp4", link: "https://rubika.ir/Addonmine" },
     { img: "images/banner3.mp4", link: "" }
 ];
 
@@ -22,11 +22,11 @@ const homeBanners = [
 const categoryBanner = { img: "images/banner2.mp4", link: "" };
 
 // ۳. بنر پایین صفحه مقالات
-const articleBanner = { img: "images/banner3.mp4", link: "https://example.com" };
+const articleBanner = { img: "images/banner3.mp4", link: "" };
 
 // ۴. آرایه ۵ تایی بنرهای تبلیغاتی بین فایل‌ها
 const promoBanners = [
-    { img: "images/banner1.mp4", link: "rubika.ir/Addonmine" },
+    { img: "images/banner1.mp4", link: "https://rubika.ir/Addonmine" },
     { img: "images/banner2.mp4", link: "" },
     { img: "banner3.mp4", link: "https://example.com/3" },
     { img: "banner4.mp4", link: "https://example.com/4" },
@@ -35,8 +35,8 @@ const promoBanners = [
 
 // ۵. ویدیوی احتیاطی در صورت خرابی بنرها
 const fallbackBanner = {
-    img: "images/banner2.mp4",
-    link: "https://t.me/your_channel_id"
+    img: "images/banner1.mp4",
+    link: "https://rubika.ir/Addonmine"
 };
 
 // ۶. پیام خوش‌آمدگویی (کنار صفحه)
