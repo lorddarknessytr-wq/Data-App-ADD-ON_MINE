@@ -652,4 +652,4 @@ Minecraft در سال‌های ابتدایی یک بازی ساده دربار�
 
 
 // ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
-const supportLink = "http//add";
+const supportLink = "https://rubika.ir/Addonmine/BIHGABCDFDAIDDDF";
