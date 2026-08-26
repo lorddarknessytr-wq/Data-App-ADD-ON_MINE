@@ -44,12 +44,12 @@ const welcomeMessage = "به اپلیکیشن ادان ماینکرفت خوش �
 
 // ۷. هشتگ‌های پیشنهادی هر دسته
 const suggestedTags = {
-    'ADD-ON': [''],
-    'Shader': [''],
-    'Skin': [''],
-    'Map': [''],
-    'Resource-Pack': [''],
-    'MiniGame': ['']
+    'ADD-ON': [],
+    'Shader': [],
+    'Skin': [],
+    'Map': [],
+    'Resource-Pack': [],
+    'MiniGame': []
 };
 
 // ۸. راهنمای نصب دسته‌ها
