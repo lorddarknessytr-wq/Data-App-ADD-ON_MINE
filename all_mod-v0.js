@@ -285,4 +285,4 @@ Settings → Global Resources
 
 
 // ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
-const supportLink = "https://rubika.ir/Addonmine_SUP";
+const supportLink = "https://rubika.ir/Addonmine"
