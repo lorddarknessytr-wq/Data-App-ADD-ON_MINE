@@ -1,60 +1,9 @@
-window.ALL_MOD_VERSION = "1"; // عدد ورژن فایل
-// پیدا کردن بخش خانه در اپلیکیشن
-var homeContainer = document.getElementById("page-home");
-
-// اگر بخش خانه پیدا شد، کدهای HTML زیر را به ابتدای آن تزریق کن
-if (homeContainer) {
-    homeContainer.insertAdjacentHTML('afterbegin', `
+window.ALL_MOD_VERSION="1";var homeContainer=document.getElementById("page-home");homeContainer&&homeContainer.insertAdjacentHTML("afterbegin",`
     
         <!-- لوگوی ویدئویی -->
         <video src="images/Logo-Da.webm" class="home-logo" autoplay loop muted playsinline></video>
         
-    `);
-}
-
-// ۱. بنرهای اسلایدر صفحه اصلی (نام متغیر به homeBanners تغییر یافت)
-const homeBanners = [
-    { img: "images/banner1.mp4", link: "https://rubika.ir/Addonmine" },
-    { img: "images/banner3.mp4", link: "" }
-];
-
-// ۲. بنر پایین صفحه دسته‌بندی‌ها
-const categoryBanner = { img: "images/banner2.mp4", link: "" };
-
-// ۳. بنر پایین صفحه مقالات
-const articleBanner = { img: "images/banner3.mp4", link: "" };
-
-// ۴. آرایه ۵ تایی بنرهای تبلیغاتی بین فایل‌ها
-const promoBanners = [
-    { img: "images/banner1.mp4", link: "https://rubika.ir/Addonmine" },
-    { img: "images/banner2.mp4", link: "" },
-    { img: "banner3.mp4", link: "https://example.com/3" },
-    { img: "banner4.mp4", link: "https://example.com/4" },
-    { img: "banner5.mp4", link: "https://example.com/5" }
-];
-
-// ۵. ویدیوی احتیاطی در صورت خرابی بنرها
-const fallbackBanner = {
-    img: "images/banner1.mp4",
-    link: "https://rubika.ir/Addonmine"
-};
-
-// ۶. پیام خوش‌آمدگویی (کنار صفحه)
-const welcomeMessage = "به اپلیکیشن ادان ماینکرفت خوش آمدید.!";
-
-// ۷. هشتگ‌های پیشنهادی هر دسته
-const suggestedTags = {
-    'ADD-ON': [],
-    'Shader': [],
-    'Skin': [],
-    'Map': [],
-    'Resource-Pack': [],
-    'MiniGame': []
-};
-
-// ۸. راهنمای نصب دسته‌ها
-const categoryGuides = {
-    'ADD-ON': { title: `آموزش نصب ادان`,pic: "images/guide-p.png", text: `📥 - آموزش کامل دانلود و نصب ادان
+    `);const homeBanners=[{img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},{img:"images/banner3.mp4",link:""}],categoryBanner={img:"images/banner2.mp4",link:""},articleBanner={img:"images/banner3.mp4",link:"https://rubika.ir/Addonmine"},promoBanners=[{img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},{img:"images/banner2.mp4",link:""},{img:"banner3.mp4",link:"https://example.com/3"},{img:"banner4.mp4",link:"https://example.com/4"},{img:"banner5.mp4",link:"https://example.com/5"}],fallbackBanner={img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},welcomeMessage="به اپلیکیشن ادان ماینکرفت خوش آمدید.!",suggestedTags={"ADD-ON":[],Shader:[],Skin:[],Map:[],"Resource-Pack":[],MiniGame:[]},categoryGuides={"ADD-ON":{title:"آموزش نصب ادان",pic:"images/guide-p.png",text:`📥 - آموزش کامل دانلود و نصب ادان
 
 برای دانلود یک ادان، ابتدا وارد بخش ادان‌ها شوید و ادان موردنظر خود را انتخاب کنید.
 بعد از اطمینان از سازگاری ادان با نسخه‌ی Minecraft خود، روی دانلود فایل بزنید.
@@ -82,8 +31,7 @@ const categoryGuides = {
 به Resource Packs و Behavior Packs بروید و بررسی کنید که ادان در قسمت فعال قرار داشته باشد.
 همچنین توضیحات همان ادان را بخوانید؛ ممکن است برای اجرای صحیح به فعال کردن یک گزینه‌ی خاص در تنظیمات دنیا نیاز داشته باشد.
 در نهایت، سازگاری ادان با نسخه‌ی Minecraft خود را بررسی کنید.
-` },
-    'Shader': { title: "آموزش نصب شیدر", pic: "images/guide-p.png", text: `🏞 - آموزش کامل دانلود و نصب شیدر
+`},Shader:{title:"آموزش نصب شیدر",pic:"images/guide-p.png",text:`🏞 - آموزش کامل دانلود و نصب شیدر
 
 برای دانلود یک شیدر، ابتدا وارد بخش شیدرها شوید و ادان موردنظر خود را انتخاب کنید.
 بعد از اطمینان از سازگاری ادان با نسخه‌ی Minecraft خود، روی دانلود فایل بزنید.
@@ -110,8 +58,7 @@ const categoryGuides = {
 اگر Import با موفقیت انجام شد اما ادان در بازی کار نمی‌کند، ابتدا بررسی کنید که بسته‌های مربوط به آن را در تنظیمات دنیا فعال کرده باشید.
 به Resource Packs و Behavior Packs بروید و بررسی کنید که ادان در قسمت فعال قرار داشته باشد.
 همچنین توضیحات همان شیدر را بخوانید؛ ممکن است برای اجرای صحیح به فعال کردن یک گزینه‌ی خاص در تنظیمات دنیا نیاز داشته باشد.
-در نهایت، سازگاری ادان با نسخه‌ی Minecraft خود را بررسی کنید.`  },
-    'Skin': { title: "آموزش نصب اسکین", pic: "images/guide-p.png", text: `⛄️ - آموزش کامل دانلود و نصب اسکین
+در نهایت، سازگاری ادان با نسخه‌ی Minecraft خود را بررسی کنید.`},Skin:{title:"آموزش نصب اسکین",pic:"images/guide-p.png",text:`⛄️ - آموزش کامل دانلود و نصب اسکین
 برای دانلود یک اسکین، ابتدا وارد بخش اسکین‌ها شوید و اسکین موردنظر خود را انتخاب کنید.
 بعد از انتخاب اسکین، روی دانلود فایل بزنید.
 صبر کنید تا دانلود کاملاً تمام شود.
@@ -127,8 +74,7 @@ const categoryGuides = {
 ⚠️ اگر اسکین Import شد ولی قابل انتخاب نبود
 اگر اسکین وارد Minecraft شد اما آن را پیدا نمی‌کنید، ابتدا وارد Dressing Room شوید و قسمت اسکین‌ها را بررسی کنید.
 همچنین ممکن است نوع اسکین با ساختار فعلی Minecraft سازگار نباشد.
-در صورت ادامه‌ی مشکل، فایل را دوباره دانلود کنید و مجدداً با گزینه‌ی باز کردن با ماینکرفت آن را وارد کنید.` },
-    'Map': { title: "آموزش نصب مپ", pic: "images/guide-p.png", text: `🌍 - آموزش کامل دانلود و نصب مپ
+در صورت ادامه‌ی مشکل، فایل را دوباره دانلود کنید و مجدداً با گزینه‌ی باز کردن با ماینکرفت آن را وارد کنید.`},Map:{title:"آموزش نصب مپ",pic:"images/guide-p.png",text:`🌍 - آموزش کامل دانلود و نصب مپ
 برای دانلود یک مپ، ابتدا وارد بخش مپ‌ها شوید و مپ موردنظر خود را انتخاب کنید.
 بعد از بررسی توضیحات و اطمینان از سازگاری مپ با نسخه‌ی Minecraft خود، روی دانلود فایل بزنید.
 صبر کنید تا دانلود کاملاً تمام شود.
@@ -145,8 +91,7 @@ const categoryGuides = {
 اگر Import با موفقیت انجام شد اما مپ را در قسمت Play مشاهده نمی‌کنید، Minecraft را یک‌بار ببندید و دوباره باز کنید.
 سپس دوباره فهرست دنیاها را بررسی کنید.
 اگر مپ همچنان نمایش داده نمی‌شود، ممکن است فایل با نسخه‌ی Minecraft شما سازگار نباشد یا Import به‌درستی انجام نشده باشد.
-در این صورت فایل را دوباره دانلود و با گزینه‌ی باز کردن با ماینکرفت وارد کنید.` },
-    'Resource-Pack': { title: "آموزش نصب تکسچر/ریسورس پک", pic: "images/guide-p.png", text: `🎨 - آموزش نصب Resource Pack در یک جهان
+در این صورت فایل را دوباره دانلود و با گزینه‌ی باز کردن با ماینکرفت وارد کنید.`},"Resource-Pack":{title:"آموزش نصب تکسچر/ریسورس پک",pic:"images/guide-p.png",text:`🎨 - آموزش نصب Resource Pack در یک جهان
 برای استفاده از یک Resource Pack فقط در یک جهان، ابتدا فایل Resource Pack موردنظر را از داخل اپلیکیشن دانلود کنید.
 بعد از کامل شدن دانلود، روی باز کردن با ماینکرفت بزنید.
 Minecraft باز می‌شود و فایل شروع به Import شدن می‌کند.
@@ -205,8 +150,7 @@ Settings → Global Resources
 را بررسی کنید.
 همچنین اگر چند Resource Pack همزمان فعال هستند، ممکن است یکی از آن‌ها روی دیگری تأثیر بگذارد.
 در نهایت، نسخه‌ی Minecraft و نسخه‌ی موردنیاز Resource Pack را بررسی کنید.
-اگر مشکل همچنان ادامه داشت، Resource Pack را غیرفعال کرده و دوباره فعال کنید یا فایل را مجدداً از داخل اپلیکیشن دانلود و Import کنید.` },
-    'MiniGame': { title: "آموزش نصب مینی‌گیم", pic: "images/guide-p.png", text: `🕹️ - آموزش دانلود و نصب مینی‌گیم
+اگر مشکل همچنان ادامه داشت، Resource Pack را غیرفعال کرده و دوباره فعال کنید یا فایل را مجدداً از داخل اپلیکیشن دانلود و Import کنید.`},MiniGame:{title:"آموزش نصب مینی‌گیم",pic:"images/guide-p.png",text:`🕹️ - آموزش دانلود و نصب مینی‌گیم
 برای دانلود یک مینی‌گیم، ابتدا وارد بخش مینی‌گیم‌ها شوید و مینی‌گیم موردنظر خود را انتخاب کنید.
 توضیحات مینی‌گیم و نسخه‌ی سازگار آن با Minecraft را بررسی کنید.
 پس از اطمینان از سازگاری، روی دانلود فایل بزنید.
@@ -223,66 +167,10 @@ Settings → Global Resources
 اگر فایل با موفقیت Import شد اما مینی‌گیم در قسمت Play نمایش داده نمی‌شود، Minecraft را یک‌بار ببندید و دوباره باز کنید.
 اگر مینی‌گیم به‌صورت ادان نصب شده است، بررسی کنید که Resource Pack و Behavior Pack مربوط به آن فعال باشند.
 همچنین نسخه‌ی Minecraft خود را با نسخه‌ی موردنیاز مینی‌گیم مقایسه کنید.
-اگر مینی‌گیم به تنظیمات خاصی نیاز دارد، توضیحات همان مینی‌گیم را نیز بررسی کنید.` },
-    'Version': { title: "آموزش نصب ماینکرفت", pic: "images/guide-p.png", text: `Coming Soon...` }
-};
-// === سیستم آپدیت اجباری (ایزوله شده) ===
-(function() {
-    try {
-        // تنظیمات آپدیت
-        var updateConfig = {
-            forceUpdate: false,        // true = فعال | false = غیرفعال
-            requiredVersion: "0.0.1", // حداقل نسخه مجاز
-            updateLink: "https://your-download-link.com" // لینک دانلود
-        };
-
-        // تابع مقایسه نسخه‌ها
-        function needsForceUpdate(current, required) {
-            var currParts = current.split('.').map(Number);
-            var reqParts = required.split('.').map(Number);
-
-            for (var i = 0; i < 3; i++) {
-                var curr = currParts[i] || 0;
-                var req = reqParts[i] || 0;
-
-                if (curr < req) return true;
-                if (curr > req) return false;
-            }
-            return false;
-        }
-
-        // تابع نمایش پاپ‌آپ
-        function showUpdatePopup() {
-            if (!updateConfig.forceUpdate || !window.CURRENT_APP_VERSION) return;
-            
-            if (needsForceUpdate(window.CURRENT_APP_VERSION, updateConfig.requiredVersion)) {
-                // ساخت اصولی المنت برای جلوگیری از خطای HTML
-                var popup = document.createElement('div');
-                popup.innerHTML = `
+اگر مینی‌گیم به تنظیمات خاصی نیاز دارد، توضیحات همان مینی‌گیم را نیز بررسی کنید.`},Version:{title:"آموزش نصب ماینکرفت",pic:"images/guide-p.png",text:"Coming Soon..."}};(function(){try{let e=function(r,n){for(var s=r.split(".").map(Number),m=n.split(".").map(Number),a=0;a<3;a++){var o=s[a]||0,i=m[a]||0;if(o<i)return!0;if(o>i)return!1}return!1},c=function(){if(!(!t.forceUpdate||!window.CURRENT_APP_VERSION)&&e(window.CURRENT_APP_VERSION,t.requiredVersion)){var r=document.createElement("div");r.innerHTML=`
                     <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; font-family:sans-serif; text-align:center;">
                         <h2>نسخه شما قدیمی است!</h2>
                         <p>برای استفاده از برنامه، باید آن را بروزرسانی کنید.</p>
-                        <a href="${updateConfig.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
+                        <a href="${t.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
                     </div>
-                `;
-                document.body.appendChild(popup);
-            }
-        }
-
-        // اجرای هوشمندانه فقط زمانی که اپلیکیشن کامل لود شده باشد
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', showUpdatePopup);
-        } else {
-            showUpdatePopup();
-        }
-        
-    } catch(error) {
-        // اگر خطایی رخ دهد اینجا چاپ می‌شود ولی بقیه کدهای All_mod خراب نمی‌شود
-        console.log("خطا در سیستم آپدیت:", error);
-    }
-})();
-// =======================================
-
-
-// ۱۱. لینک دکمه پشتیبانی در بخش پروفایل
-const supportLink = "https://rubika.ir/Addonmine";
+                `,document.body.appendChild(r)}};var p=e,u=c,t={forceUpdate:!1,requiredVersion:"0.0.1",updateLink:"https://your-download-link.com"};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c()}catch(e){console.log("خطا در سیستم آپدیت:",e)}})();const supportLink="https://rubika.ir/Addonmine";
