@@ -1,7 +1,7 @@
 window.ALL_MOD_VERSION="1";var homeContainer=document.getElementById("page-home");homeContainer&&homeContainer.insertAdjacentHTML("afterbegin",`
     
         <!-- لوگوی ویدئویی -->
-        <video src="images/Logo-Da.webm" class="home-logo" autoplay loop muted playsinline></video>
+        <video src="a/huabieuz.mp4" class="home-logo" autoplay loop muted playsinline></video>
         
     `);const homeBanners=[{img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},{img:"images/banner3.mp4",link:""}],categoryBanner={img:"images/banner2.mp4",link:""},articleBanner={img:"images/banner3.mp4",link:"https://rubika.ir/Addonmine"},promoBanners=[{img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},{img:"images/banner2.mp4",link:""},{img:"banner3.mp4",link:"https://example.com/3"},{img:"banner4.mp4",link:"https://example.com/4"},{img:"banner5.mp4",link:"https://example.com/5"}],fallbackBanner={img:"images/banner1.mp4",link:"https://rubika.ir/Addonmine"},welcomeMessage="به اپلیکیشن ادان ماینکرفت خوش آمدید.!",suggestedTags={"ADD-ON":[],Shader:[],Skin:[],Map:[],"Resource-Pack":[],MiniGame:[]},categoryGuides={"ADD-ON":{title:"آموزش نصب ادان",pic:"images/guide-p.png",text:`📥 - آموزش کامل دانلود و نصب ادان
 
