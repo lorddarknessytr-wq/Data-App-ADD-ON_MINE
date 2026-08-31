@@ -1,6 +1,16 @@
-window.g_2f4qk="1";var homeContainer=document.getElementById("page-home");homeContainer&&homeContainer.insertAdjacentHTML("afterbegin",`
-        <video src="a/izdjk1u0.webm" class="home-logo" autoplay loop muted playsinline></video>
-    `);const g_0ibyy=[{img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},{img:"a/k7ons3l2.mp4",link:""}],g_url65={img:"a/huabieuz.mp4",link:""},g_b4kj4={img:"a/k7ons3l2.mp4",link:"https://rubika.ir/Addonmine"},g_hbi6j=[{img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},{img:"a/huabieuz.mp4",link:""},{img:"banner3.mp4",link:"https://example.com/3"},{img:"banner4.mp4",link:"https://example.com/4"},{img:"banner5.mp4",link:"https://example.com/5"}],g_lvhkp={img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},g_o2drv="به اپلیکیشن ادان ماینکرفت خوش آمدید.!",g_auk7v={"ADD-ON":[],Shader:[],Skin:[],Map:[],"Resource-Pack":[],MiniGame:[]},g_wzzut={"ADD-ON":{title:"آموزش نصب ادان",pic:"a/2deaavag.webp",text:`📥 - آموزش کامل دانلود و نصب ادان
+window.g_2f4qk="1";const g_0ibyy=[
+    {img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},
+    {img:"a/k7ons3l2.mp4",link:"https://rubika.ir/Addonmine"}
+],
+g_url65={img:"a/huabieuz.mp4",link:"https://rubika.ir/Addonmine"},
+g_b4kj4={img:"a/k7ons3l2.mp4",link:"https://rubika.ir/Addonmine"},
+g_hbi6j=[
+    {img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},
+    {img:"a/huabieuz.mp4",link:"https://rubika.ir/Addonmine"},
+    {img:"a/k7ons3l2.mp4",link:"https://rubika.ir/Addonmine"}
+],
+g_lvhkp={img:"a/6gj1u4bg.mp4",link:"https://rubika.ir/Addonmine"},
+g_o2drv="به اپلیکیشن ادان ماینکرفت خوش آمدید.!",g_auk7v={"ADD-ON":[],Shader:[],Skin:[],Map:[],"Resource-Pack":[],MiniGame:[]},g_wzzut={"ADD-ON":{title:"آموزش نصب ادان",pic:"a/2deaavag.webp",text:`📥 - آموزش کامل دانلود و نصب ادان
 برای دانلود یک ادان، ابتدا وارد بخش ادان‌ها شوید و ادان موردنظر خود را انتخاب کنید.
 بعد از اطمینان از سازگاری ادان با نسخه‌ی Minecraft خود، روی دانلود فایل بزنید.
 صبر کنید تا دانلود کاملاً تمام شود. پس از پایان دانلود، دکمه‌ی باز کردن با ماینکرفت نمایش داده می‌شود.
@@ -46,7 +56,7 @@ window.g_2f4qk="1";var homeContainer=document.getElementById("page-home");homeCo
 اگر Import با موفقیت انجام شد اما ادان در بازی کار نمی‌کند، ابتدا بررسی کنید که بسته‌های مربوط به آن را در تنظیمات دنیا فعال کرده باشید.
 به Resource Packs و Behavior Packs بروید و بررسی کنید که ادان در قسمت فعال قرار داشته باشد.
 همچنین توضیحات همان شیدر را بخوانید؛ ممکن است برای اجرای صحیح به فعال کردن یک گزینه‌ی خاص در تنظیمات دنیا نیاز داشته باشد.
-در نهایت، سازگاری ادان با نسخه‌ی Minecraft خود را بررسی کنید.`},Skin:{title:"آموزش نصب اسکین",pic:"a/2deaavag.webp",text:`⛄️ - آموزش کامل دانلود و نصب اسکین
+در نهایت، سازگاری شیدر با نسخه‌ی Minecraft خود را بررسی کنید.`},Skin:{title:"آموزش نصب اسکین",pic:"a/2deaavag.webp",text:`⛄️ - آموزش کامل دانلود و نصب اسکین
 برای دانلود یک اسکین، ابتدا وارد بخش اسکین‌ها شوید و اسکین موردنظر خود را انتخاب کنید.
 بعد از انتخاب اسکین، روی دانلود فایل بزنید.
 صبر کنید تا دانلود کاملاً تمام شود.
@@ -67,7 +77,7 @@ window.g_2f4qk="1";var homeContainer=document.getElementById("page-home");homeCo
 بعد از بررسی توضیحات و اطمینان از سازگاری مپ با نسخه‌ی Minecraft خود، روی دانلود فایل بزنید.
 صبر کنید تا دانلود کاملاً تمام شود.
 پس از پایان دانلود، دکمه‌ی باز کردن با ماینکرفت نمایش داده می‌شود.
-روی این دکمه بزنید تا فایل مستقیماً به Minecraft ارسال شود.
+روی آن بزنید تا فایل مستقیماً به Minecraft ارسال شود.
 🎮 داخل Minecraft چه کاری انجام دهیم؟
 پس از باز شدن Minecraft، بازی شروع به Import کردن مپ می‌کند.
 در این مرحله صبر کنید تا عملیات Import به پایان برسد.
