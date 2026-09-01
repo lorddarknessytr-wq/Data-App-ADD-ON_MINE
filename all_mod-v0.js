@@ -161,4 +161,4 @@ Settings → Global Resources
                         <p>برای استفاده از برنامه، باید آن را بروزرسانی کنید.</p>
                         <a href="${t.updateLink}" style="background:#28a745; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px; font-weight:bold;">دانلود نسخه جدید</a>
                     </div>
-                `,document.body.appendChild(r)}};var p=e,u=c,t={forceUpdate:!1,requiredVersion:"0.0.1",updateLink:"https://your-download-link.com"};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c()}catch(e){console.log("خطا در سیستم آپدیت:",e)}})();const g_kw95r="https://rubika.ir/Addonmine";
+                `,document.body.appendChild(r)}};var p=e,u=c,t={forceUpdate:!1,requiredVersion:"0.0.1",updateLink:"https://your-download-link.com"};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c()}catch(e){console.log("خطا در سیستم آپدیت:",e)}})();const g_kw95r="https://rubika.ir/Addonmine/BIHGABCDFDAIDDDF";
